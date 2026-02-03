@@ -31,7 +31,7 @@ body{margin:0;font-family:Arial,sans-serif;background:#000;color:#fff}/* LOGIN *
   <label class="switch"><input type="checkbox"><span class="slider"></span></label>
 </div>
 
-  </div>  <div class="button">Abrir FF</div>
+  </div>  <div class="button" onclick="abrirFF()">Abrir FF</div>
 </div><script>
 const SENHA = 'psicothebest';
 
@@ -43,6 +43,12 @@ function entrar(){
   } else {
     document.getElementById('erro').style.display = 'block';
   }
+}
+
+
+function abrirFF(){
+  // Abrir Play Store do Free Fire
+  window.location.href = 'https://play.google.com/store/apps/details?id=com.dts.freefireth';
 }
 </script></body>
 </html>
